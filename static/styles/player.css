@@ -1,1 +1,463 @@
-[class~=custom-context-menu]{position:absolute;}[class~=custom-context-menu] h3,[class~=custom-context-menu] p{margin-left:0;}[class~=custom-context-menu]{display:none;}[class~=custom-context-menu]{background-color:#282c34;}[class~=control-button]:hover{color:#c80446;}[class~=custom-context-menu] h3,[class~=custom-context-menu] p{margin-bottom:0;}[class~=custom-context-menu] p,[class~=custom-context-menu] h3{margin-right:0;}[class~=custom-context-menu]{color:#fff;}body{overflow:hidden;}[class~=custom-context-menu] h3{margin-top:0;}[class~=control-button]:hover{transform:scale(1.1);}[class~=custom-context-menu]{border-left-width:.0625pc;}[class~=custom-context-menu]{border-bottom-width:.0625pc;}[class~=custom-context-menu]{border-right-width:.0625pc;}[class~=control-button]:focus{outline:none;}[class~=custom-context-menu]{border-top-width:.0625pc;}[class~=custom-context-menu]{border-left-style:solid;}[class~=custom-context-menu]{border-bottom-style:solid;}[class~=settings-menu] [class~=settings-option]{background:transparent;}[class~=custom-context-menu]{border-right-style:solid;}[class~=custom-context-menu]{border-top-style:solid;}[class~=settings-menu] [class~=settings-option]{border-left-width:medium;}[class~=settings-menu] [class~=settings-option]{border-bottom-width:medium;}[class~=settings-menu] [class~=settings-option]{border-right-width:medium;}[class~=custom-context-menu]{border-left-color:#444;}body{padding-left:0in !important;}[class~=custom-context-menu]{border-bottom-color:#444;}[class~=custom-context-menu]{border-right-color:#444;}[class~=settings-menu] [class~=settings-option]{border-top-width:medium;}[class~=custom-context-menu]{border-top-color:#444;}[class~=custom-context-menu]{border-image:none;}[class~=custom-context-menu]{border-radius:8px;}[class~=settings-menu] [class~=settings-option]{border-left-style:none;}[class~=custom-context-menu] h3{font-size:.166666667in;}[class~=custom-context-menu]{box-shadow:0 4px 8px rgba(0,0,0,.2);}[class~=custom-context-menu]{padding-left:7.5pt;}[class~=custom-context-menu] h3{color:#61dafb;}[class~=settings-menu] [class~=settings-option]{border-bottom-style:none;}[class~=settings-menu] [class~=settings-option]{border-right-style:none;}.controls,[class~=custom-context-menu]{padding-bottom:7.5pt;}[class~=custom-context-menu]{padding-right:7.5pt;}[class~=settings-menu] [class~=settings-option]{border-top-style:none;}.controls,[class~=custom-context-menu]{padding-top:7.5pt;}[class~=custom-context-menu]{z-index:1000;}[class~=custom-context-menu]{user-select:none;}[class~=player-container]{position:relative;}[class~=custom-context-menu] p{margin-top:.052083333in;}[class~=player-container],[class~=video-player],[class~=overlay]{width:100%;}[class~=player-container]{height:100vh;}[class~=settings-menu] [class~=settings-option]{border-left-color:currentColor;}[class~=player-container]{background:black;}[class~=player-container]{background-size:cover;}body{padding-bottom:0in !important;}[class~=video-player],[class~=overlay]{height:100%;}[class~=video-player]{object-fit:cover;}[class~=player-container]:hover [class~=controls]{opacity:1;}[class~=overlay],.controls{position:absolute;}[class~=overlay]{top:0;}[class~=overlay]{left:0;}[class~=custom-context-menu] p{font-size:14px;}[class~=settings-menu] ul{list-style:none;}[class~=settings-menu] [class~=settings-option]{border-bottom-color:currentColor;}[class~=overlay]{background:url("../media/overlay.png") no-repeat center center;}[class~=overlay]{background-size:contain;}[class~=overlay]{z-index:10;}[class~=overlay]{pointer-events:none;}[class~=right-controls],[class~=left-controls],.controls{display:flex;}.controls{justify-content:space-between;}.controls{padding-left:1.25pc;}[class~=control-button],[class~=settings-menu] [class~=settings-option]{border-right-color:currentColor;}.controls{padding-right:1.25pc;}[class~=settings-menu] ul{padding-left:0;}[class~=settings-menu] [class~=settings-option]:hover{background-color:#c80446;}[class~=control-button],[class~=settings-menu] [class~=settings-option]{border-top-color:currentColor;}.controls{bottom:7.5pt;}.controls{left:50%;}[class~=settings-menu] [class~=settings-option]{border-image:none;}.controls{transform:translateX(-50%);}.controls{background-color:rgba(0,0,0,.6);}.controls{border-radius:5px;}body{padding-right:0in !important;}.controls{width:calc(100% - 40px);}.controls{opacity:0;}[class~=control-button],[class~=settings-menu] [class~=settings-option]{color:#fff;}[class~=settings-menu] [class~=settings-option]{font-size:.166666667in;}[class~=settings-menu] [class~=settings-option]{padding-left:.083333333in;}.controls{transition:opacity .5s ease;}body{padding-top:0in !important;}[class~=settings-menu] ul{padding-bottom:0;}[class~=right-controls],[class~=left-controls]{align-items:center;}body{margin-left:0pc !important;}[class~=left-controls],[class~=right-controls]{gap:.15625in;}[class~=settings-menu] ul{padding-right:0;}[class~=settings-menu] [class~=settings-option]{padding-bottom:.083333333in;}body{margin-bottom:0pc !important;}body{margin-right:0pc !important;}[class~=control-button]{background:transparent;}[class~=control-button]{border-left-width:medium;}[class~=control-button]{border-bottom-width:medium;}[class~=control-button]{border-right-width:medium;}[class~=control-button]{border-top-width:medium;}[class~=settings-menu] [class~=settings-option]{padding-right:.083333333in;}[class~=control-button]{border-left-style:none;}[class~=control-button]{border-bottom-style:none;}[class~=control-button]{border-right-style:none;}[class~=control-button]{border-top-style:none;}[class~=control-button]{border-left-color:currentColor;}[class~=control-button]{border-bottom-color:currentColor;}[class~=settings-menu] [class~=settings-option]{padding-top:.083333333in;}[class~=settings-menu] ul{padding-top:0;}[class~=settings-menu] ul{margin-left:0;}[class~=control-button]{border-image:none;}[class~=settings-menu] ul{margin-bottom:0;}[class~=settings-menu] [class~=settings-option]{width:150px;}[class~=settings-menu] ul{margin-right:0;}[class~=control-button]{font-size:24px;}body{margin-top:0pc !important;}[class~=settings-menu] [class~=settings-option],[class~=control-button],.volume-slider{cursor:pointer;}[class~=settings-menu] [class~=settings-option]{text-align:left;}body{background-color:black !important;}[class~=control-button]{transition:transform .2s ease,color .3s ease;}[class~=control-button]{padding-left:9pt;}[class~=control-button]{padding-bottom:9pt;}[class~=settings-menu] ul{margin-top:0;}[class~=control-button]{padding-right:9pt;}[class~=control-button]{padding-top:9pt;}.volume-slider{width:75pt;}.volume-slider{-webkit-appearance:none;}body{user-select:none;}.volume-slider{appearance:none;}.volume-slider{height:8px;}.volume-slider{background:rgba(255,255,255,.4);}.volume-slider{border-radius:.052083333in;}[class~=volume-slider]::-webkit-slider-thumb{-webkit-appearance:none;}[class~=volume-slider]::-webkit-slider-thumb{appearance:none;}body{font-family:Arial;}[class~=volume-slider]::-webkit-slider-thumb{width:15pt;}[class~=volume-slider]::-webkit-slider-thumb{height:15pt;}[class~=volume-slider]::-webkit-slider-thumb{background:#c80446;}[class~=volume-slider]::-webkit-slider-thumb{border-radius:50%;}[class~=volume-slider]::-webkit-slider-thumb{cursor:pointer;}[class~=volume-slider]::-moz-range-thumb{width:.208333333in;}[class~=volume-slider]::-moz-range-thumb{height:15pt;}[class~=volume-slider]::-moz-range-thumb{background:#c80446;}[class~=volume-slider]::-moz-range-thumb{border-radius:50%;}[class~=volume-slider]::-moz-range-thumb{cursor:pointer;}[class~=settings-menu]{display:none;}[class~=settings-menu]{position:absolute;}[class~=settings-menu]{top:0;}[class~=settings-menu]{right:0;}[class~=settings-menu]{background-color:#333;}[class~=settings-menu]{border-radius:3.75pt;}[class~=settings-menu]{padding-left:.104166667in;}[class~=settings-menu]{padding-bottom:.104166667in;}[class~=settings-menu]{padding-right:.104166667in;}[class~=settings-menu]{padding-top:.104166667in;}[class~=settings-menu]{box-shadow:0pc .25pc 4.5pt rgba(0,0,0,.5);}[class~=settings-menu]{z-index:10;}
+        body {
+            overflow: hidden;
+            padding: 0px!important;
+            margin: 0px!important;
+            background-color: black!important; 
+            user-select: none;
+			font-family: Arial;
+        }
+
+        .infop-menu {
+            position: absolute;
+            display: none;
+            background-color: rgba(0, 0, 0, 0.9);
+            border: 1px solid rgba(255, 255, 255, 0.1);
+            border-radius: 8px;
+            padding: 8px;
+            z-index: 1000;
+            user-select: none;
+            min-width: 200px;
+        }
+
+        .infop-menu h3 {
+            margin: 0;
+            font-size: 16px;
+            color: #61dafb;
+        }
+
+        .infop-menu p {
+            margin: 5px 0 0;
+            font-size: 14px;
+        }
+
+        .player-master {
+            position: relative;
+            width: 100%;
+            height: 100vh;
+            background: black; 
+            background-size: cover;
+        }
+
+        .video-player {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+
+        
+        .overlay {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: url('../media/overlay.png') no-repeat center center;
+            background-size: contain;
+            z-index: 10;
+            pointer-events: none;
+        }
+
+        .controls {
+            display: flex;
+            justify-content: space-between;
+            position: absolute;
+            bottom: 10px;
+            left: 50%;
+            padding: 0px 15px 0px;
+            transform: translateX(-50%);
+            background-color: rgba(0, 0, 0, 0.6);
+            border-radius: 5px;
+            width: calc(100% - 40px);
+            opacity: 0;
+            transition: opacity 0.5s ease;
+        }
+
+        .player-master:hover .controls {
+            opacity: 1;
+        }
+
+        .left-controls,
+        .right-controls {
+            display: flex;
+            align-items: center;
+            gap: 15px;
+        }
+
+        .control-button {
+            background: transparent;
+            border: none;
+            color: #fff;
+            font-size: 24px;
+            cursor: pointer;
+            transition: transform 0.2s ease, color 0.3s ease;
+            padding: 12px 0px 12px;
+            position: relative;
+        }
+
+        .control-button:hover {
+            color: #c80446;
+            transform: scale(1.1);
+        }
+
+        .control-button:focus {
+            outline: none;
+        }
+
+        .control-button:hover .tooltip {
+            opacity: 1;
+            visibility: visible;
+        }
+
+        .volume-container {
+            display: flex;
+            align-items: center;
+            position: relative;
+            height: 100%;
+        }
+
+        .live-badge {
+            display: flex;
+            align-items: center;
+            background-color: rgba(0, 0, 0, 0.6);
+            color: white;
+            padding: 4px 8px;
+            border-radius: 4px;
+            font-size: 12px;
+            font-weight: bold;
+            margin-left: 8px;
+            border: 1px solid rgba(255, 255, 255, 0.1);
+            transition: transform 0.3s ease;
+        }
+
+        .volume-container:hover + .live-badge {
+            transform: translateX(100px);
+        }
+
+        .volume-container::after {
+            content: '';
+            position: absolute;
+            left: 24px;
+            width: 120px;
+            height: 40px;
+            background: transparent;
+            top: 50%;
+            transform: translateY(-50%);
+        }
+
+        .volume-container:hover .volume-slider {
+            width: 100px;
+            opacity: 1;
+            visibility: visible;
+        }
+
+        .volume-slider {
+            position: absolute;
+            left: 40px;
+            width: 0;
+            opacity: 0;
+            visibility: hidden;
+            transition: all 0.3s ease;
+            -webkit-appearance: none;
+            appearance: none;
+            height: 8px;
+            background: rgba(255, 255, 255, 0.4);
+            border-radius: 5px;
+            cursor: pointer;
+            z-index: 2;
+        }
+
+        .volume-slider::-webkit-slider-thumb {
+            -webkit-appearance: none;
+            appearance: none;
+            width: 20px;
+            height: 20px;
+            background: #c80446;
+            border-radius: 50%;
+            cursor: pointer;
+        }
+
+        .volume-slider::-moz-range-thumb {
+            width: 20px;
+            height: 20px;
+            background: #c80446;
+            border-radius: 50%;
+            cursor: pointer;
+        }
+
+        .settings-menu {
+            position: absolute;
+            bottom: 60px;
+            right: 10px;
+            background-color: rgba(0, 0, 0, 0.8);
+            border-radius: 8px;
+            padding: 10px;
+            display: none;
+            min-width: 200px;
+        }
+
+        .settings-menu.active {
+            display: block;
+        }
+
+        .settings-option {
+            color: white;
+            padding: 8px 15px;
+            cursor: pointer;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            transition: background-color 0.2s ease;
+        }
+
+        .settings-option:hover {
+            background-color: rgba(200, 4, 70, 0.3);
+            border-radius: 4px;
+        }
+
+        .settings-option i {
+            margin-left: 10px;
+        }
+
+        .quality-text {
+            color: #c80446;
+            margin-left: 5px;
+        }
+
+        .tooltip {
+            position: absolute;
+            bottom: 100%;
+            left: 50%;
+            transform: translateX(-50%);
+            padding: 6px 10px;
+            background-color: rgba(0, 0, 0, 0.8);
+            color: white;
+            font-size: 12px;
+            border-radius: 4px;
+            white-space: nowrap;
+            opacity: 0;
+            visibility: hidden;
+            transition: opacity 0.2s ease, visibility 0.2s ease;
+            margin-bottom: 5px;
+        }
+
+        .tooltip::after {
+            content: '';
+            position: absolute;
+            top: 100%;
+            left: 50%;
+            transform: translateX(-50%);
+            border-width: 5px;
+            border-style: solid;
+            border-color: rgba(0, 0, 0, 0.8) transparent transparent transparent;
+        }
+
+        .clip-modal {
+            display: none;
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(0, 0, 0, 0.7);
+            z-index: 1000;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .clip-modal.active {
+            display: flex;
+        }
+
+        .clip-modal-content {
+            background-color: #282c34;
+            padding: 20px;
+            border-radius: 8px;
+            width: 90%;
+            max-width: 400px;
+        }
+
+        .clip-modal-content h3 {
+            color: white;
+            margin: 0 0 10px 0;
+        }
+
+        .clip-modal-content p {
+            color: #aaa;
+            margin: 0 0 20px 0;
+            font-size: 14px;
+        }
+
+        .clip-form {
+            display: flex;
+            flex-direction: column;
+            gap: 15px;
+        }
+
+        .clip-input {
+            padding: 10px;
+            border: 1px solid #444;
+            border-radius: 4px;
+            background-color: #1e2127;
+            color: white;
+            font-size: 14px;
+        }
+
+        .clip-input:focus {
+            outline: none;
+            border-color: #c80446;
+        }
+
+        .clip-buttons {
+            display: flex;
+            gap: 10px;
+            justify-content: flex-end;
+        }
+
+        .clip-button {
+            padding: 8px 16px;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            font-size: 14px;
+            transition: all 0.2s ease;
+        }
+
+        .clip-button.cancel {
+            background-color: transparent;
+            color: #aaa;
+            border: 1px solid #444;
+        }
+
+        .clip-button.cancel:hover {
+            background-color: rgba(255, 255, 255, 0.1);
+        }
+
+        .clip-button.save {
+            background-color: #c80446;
+            color: white;
+        }
+
+        .clip-button.save:hover {
+            background-color: #a00339;
+        }
+
+        .live-dot {
+            width: 8px;
+            height: 8px;
+            background-color: #c80446;
+            border-radius: 50%;
+            margin-right: 6px;
+            animation: pulse 1.5s ease-in-out infinite;
+        }
+
+        @keyframes pulse {
+            0% {
+                transform: scale(1);
+                opacity: 1;
+            }
+            50% {
+                transform: scale(1.2);
+                opacity: 0.7;
+            }
+            100% {
+                transform: scale(1);
+                opacity: 1;
+            }
+        }
+
+        .context-option {
+            padding: 8px 12px;
+            color: white;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            cursor: pointer;
+            border-radius: 4px;
+            transition: background-color 0.2s ease;
+        }
+
+        .context-option:hover {
+            background-color: rgba(200, 4, 70, 0.3);
+        }
+
+        .context-option i {
+            font-size: 18px;
+            color: #c80446;
+        }
+
+        .context-option a {
+            color: white;
+            text-decoration: none;
+        }
+
+        .context-separator {
+            height: 1px;
+            background-color: rgba(255, 255, 255, 0.1);
+            margin: 5px 0;
+        }
+
+        .stats-overlay {
+            position: absolute;
+            top: 20px;
+            right: 20px;
+            background-color: rgba(0, 0, 0, 0.9);
+            border: 1px solid rgba(255, 255, 255, 0.1);
+            border-radius: 8px;
+            padding: 15px;
+            width: 350px;
+            display: none;
+            z-index: 100;
+        }
+
+        .stats-overlay.active {
+            display: block;
+        }
+
+        .stats-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 15px;
+        }
+
+        .stats-header h3 {
+            color: white;
+            margin: 0;
+            font-size: 16px;
+        }
+
+        .stats-close {
+            background: transparent;
+            border: none;
+            color: white;
+            cursor: pointer;
+            padding: 5px;
+            font-size: 20px;
+            transition: color 0.2s ease;
+        }
+
+        .stats-close:hover {
+            color: #c80446;
+        }
+
+        .stats-content {
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+        }
+
+        .stats-row {
+            display: flex;
+            justify-content: space-between;
+            color: white;
+            font-size: 13px;
+        }
+
+        .stats-label {
+            color: #aaa;
+        }
+
+        .stats-value {
+            color: #c80446;
+            font-family: monospace;
+        }

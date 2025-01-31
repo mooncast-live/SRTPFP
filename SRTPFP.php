@@ -6,18 +6,27 @@ $source = isset($_GET['source']) ? htmlspecialchars($_GET['source']) : 'default'
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>SRTPFP</title>
-    <link href="../static/vendor/fontawesome/css/all.min.css" rel="stylesheet">
+    <title>Playing: <?= $source ?> - SRTPFP</title>
+    <link href="../static/vendor/remixicon/remixicon.css" rel="stylesheet">
     <link href="../static/styles/player.css" rel="stylesheet">
 </head>
-<body>    
-	<div id="videoData" data-source="<?= $source ?>"></div>
-    <div class="custom-context-menu" id="contextMenu">
-        <h3>SRTPFP</h3>
-        <p>v0.1.0 Pre-Release</p>
-		<p><a href="https://github.com/mooncast-live/SRTPFP" style="color: white!important;" rel="nofollow">Get it here</a></p>
+<body>
+    <div class="infop-menu" id="contextMenu">
+        <div class="context-option">
+            <i class="ri-information-line"></i>
+            <span>SRTPFP v0.2.0</span>
+        </div>
+        <div class="context-option">
+            <i class="ri-github-fill"></i>
+            <a href="https://github.com/mooncast-live/SRTPFP" target="_blank" rel="nofollow">Get it on GitHub</a>
+        </div>
+        <div class="context-separator"></div>
+        <div class="context-option" id="showStats">
+            <i class="ri-bar-chart-box-line"></i>
+            <span>Stats for nerds</span>
+        </div>
     </div>
-    <div class="player-container">
+    <div class="player-master" id="videoData" data-source="<?= $source ?>">
         <video id="flv-player" autoplay class="video-player" width="100%" height="100%"></video>
 
         <div class="overlay"></div>
@@ -25,91 +34,104 @@ $source = isset($_GET['source']) ? htmlspecialchars($_GET['source']) : 'default'
         <div class="controls">
             <div class="left-controls">
                 <button id="play-pause" class="control-button">
-                    <i class="fas fa-pause"></i>
+                    <span class="tooltip">Play/Pause</span>
+                    <i class="ri-pause-fill"></i>
                 </button>
-				<b style="color: white;"><i class="fa-solid fa-sm fa-circle" style="color: red!important;"></i> LIVE</b>
-                <input id="volume-control" type="range" min="0" max="1" step="0.01" value="1" class="volume-slider">
-				
+                <div class="volume-container">
+                    <button id="volume" class="control-button">
+                        <span class="tooltip">Toggle Mute</span>
+                        <i class="ri-volume-up-fill"></i>
+                    </button>
+                    <input id="volume-control" type="range" min="0" max="1" step="0.01" value="1" class="volume-slider">
+                </div>
+                <div class="live-badge">
+                    <span class="live-dot"></span>
+                    LIVE
+                </div>
             </div>
             <div class="right-controls">
+                <button id="clip" class="control-button">
+                    <span class="tooltip">Create Clip</span>
+                    <i class="ri-clapperboard-fill"></i>
+                </button>
+                <button id="settings" class="control-button">
+                    <span class="tooltip">Settings</span>
+                    <i class="ri-settings-3-fill"></i>
+                </button>
+                <div class="settings-menu" id="settingsMenu">
+                    <div class="settings-option" id="qualityOption">
+                        Quality: <span class="quality-text">Source</span>
+                    </div>
+                    <div class="settings-option" id="pipOption">
+                        Picture in Picture <i class="ri-picture-in-picture-2-line"></i>
+                    </div>
+                </div>
                 <button id="fullscreen" class="control-button">
-                    <i class="fas fa-expand"></i>
+                    <span class="tooltip">Fullscreen</span>
+                    <i class="ri-fullscreen-fill"></i>
                 </button>
             </div>
         </div>
     </div>
 
+    <div class="clip-modal" id="clipModal">
+        <div class="clip-modal-content">
+            <h3>Create Clip</h3>
+            <p>Share your clip with the world!</p>
+            <div class="clip-form">
+                <input type="text" id="clipName" placeholder="Clip name" class="clip-input">
+                <div class="clip-buttons">
+                    <button id="cancelClip" class="clip-button cancel">Cancel</button>
+                    <button id="saveClip" class="clip-button save">Save Clip</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="stats-overlay" id="statsOverlay">
+        <div class="stats-header">
+            <h3>Stats for nerds</h3>
+            <button class="stats-close" id="closeStats">
+                <i class="ri-close-line"></i>
+            </button>
+        </div>
+        <div class="stats-content">
+            <div class="stats-row">
+                <span class="stats-label">Video ID</span>
+                <span class="stats-value" id="statsVideoId"><?= $source ?></span>
+            </div>
+            <div class="stats-row">
+                <span class="stats-label">Resolution</span>
+                <span class="stats-value" id="statsResolution">-</span>
+            </div>
+            <div class="stats-row">
+                <span class="stats-label">Current / Optimal Res</span>
+                <span class="stats-value" id="statsCurrentRes">-</span>
+            </div>
+            <div class="stats-row">
+                <span class="stats-label">Viewport / Frames</span>
+                <span class="stats-value" id="statsViewport">-</span>
+            </div>
+            <div class="stats-row">
+                <span class="stats-label">Volume / Normalized</span>
+                <span class="stats-value" id="statsVolume">-</span>
+            </div>
+            <div class="stats-row">
+                <span class="stats-label">Connection Speed</span>
+                <span class="stats-value" id="statsConnection">-</span>
+            </div>
+            <div class="stats-row">
+                <span class="stats-label">Network Activity</span>
+                <span class="stats-value" id="statsNetwork">-</span>
+            </div>
+            <div class="stats-row">
+                <span class="stats-label">Buffer Health</span>
+                <span class="stats-value" id="statsBuffer">-</span>
+            </div>
+        </div>
+    </div>
+
     <script src="../static/vendor/flvjs/flv.min.js"></script>
-    <script>
-     const contextMenu = document.getElementById('contextMenu');
-
-        document.addEventListener('contextmenu', (event) => {
-            event.preventDefault();
-            const { clientX: mouseX, clientY: mouseY } = event;
-
-            contextMenu.style.left = `${mouseX}px`;
-            contextMenu.style.top = `${mouseY}px`;
-            contextMenu.style.display = 'block';
-        });
-
-        document.addEventListener('click', () => {
-            contextMenu.style.display = 'none';
-        });
-
-        if (flvjs.isSupported()) {
-			const source = document.getElementById('videoData').getAttribute('data-source');
-            const videoUrl = `https://YOUR_SERVER_URL/YOUR_KEY/${source}.flv`;
-            const player = flvjs.createPlayer({
-                type: 'flv',
-                url: videoUrl,
-            });
-
-            const videoElement = document.getElementById('flv-player');
-            player.attachMediaElement(videoElement);
-            player.load();
-
-            const playPauseButton = document.getElementById('play-pause');
-            playPauseButton.addEventListener('click', function () {
-                if (videoElement.paused) {
-                    videoElement.play();
-                    playPauseButton.innerHTML = '<i class="fas fa-pause"></i>';
-                } else {
-                    videoElement.pause();
-                    playPauseButton.innerHTML = '<i class="fas fa-play"></i>';
-                }
-            });
-
-            const volumeControl = document.getElementById('volume-control');
-            volumeControl.addEventListener('input', function () {
-                videoElement.volume = volumeControl.value;
-            });
-
-            const fullscreenButton = document.getElementById('fullscreen');
-            fullscreenButton.addEventListener('click', function () {
-                if (videoElement.requestFullscreen) {
-                    videoElement.requestFullscreen();
-                } else if (videoElement.mozRequestFullScreen) {
-                    videoElement.mozRequestFullScreen();
-                } else if (videoElement.webkitRequestFullscreen) {
-                    videoElement.webkitRequestFullscreen();
-                }
-            });
-			window.addEventListener('load', () => {
-				const video = document.getElementById('flv-player');
-				video.muted = true;
-				video.play().catch((error) => {
-				  console.error('SRTPFP Err:', error);
-				});
-			});
-            player.on('error', function () {
-                const playerContainer = document.querySelector('.player-container');
-                playerContainer.style.backgroundImage = 'url("../static/media/offline.png")';
-                playerContainer.style.backgroundSize = 'cover';
-                playerContainer.style.backgroundPosition = 'center';
-                document.querySelector('.controls').style.display = 'none'; 
-				document.querySelector('.overlay').style.display = 'none'; 
-            });
-        }
-    </script>
+    <script src="../static/scripts/player.js"></script>
 </body>
 </html>
